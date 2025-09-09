@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-df = pd.read_csv("../vehicles_us.csv")
+df = pd.read_csv("vehicles_us.csv")
 df = df[df["price"] < 100000]  # Filtrar precios extremos
 
 # --- Encabezado ---
